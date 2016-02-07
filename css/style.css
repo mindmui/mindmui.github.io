@@ -108,6 +108,29 @@ a.social:active {
 	margin-left: 20px;
 }
 
+a.menu:link {
+	color: #717D84;
+	text-decoration: none;
+	font-size: 30px
+	margin-left: 20px;
+	transition: .2s ease-in-out;
+}
+a.menu:visited {
+	text-decoration: none;
+	color: #717D84;
+	font-size: 30px
+}
+a.menu:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 30px
+	transition: .2s ease-in-out;
+}
+a.menu:active {
+	text-decoration: none;
+	font-size: 30px
+}
+
 /* Mobile Layout: 480px and below. */
 
 .gridContainer {
@@ -138,6 +161,7 @@ a.social:active {
     background-color: #000000;
     background-color:rgba(0, 0, 0, 0.4); /*opacity*/
 }
+
 .main {
 	padding-left: 30px;
 }
