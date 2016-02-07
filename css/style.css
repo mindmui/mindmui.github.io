@@ -36,6 +36,15 @@ h2 {
 	line-height: 1.5em;
 	text-transform: uppercase;
 }
+h3 {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 1.8em;
+	line-height: 1.7em;
+	letter-spacing: .13em;
+	text-transform: uppercase;
+	float: right;
+}
 .p {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	font-weight: 300;
@@ -54,6 +63,8 @@ h2 {
     margin:0;
     padding:0;
 }
+
+
 a.email:link {
 	color: #44D7B7;
 	text-decoration: none;
@@ -116,6 +127,16 @@ a.social:active {
 	position: fixed;
 	margin-top: 30px; /*fixed*/
 
+}
+.portfolio {
+	position: fixed;
+    padding-right: 30px;
+    padding-left: 40px;
+    right: 20px;
+    top: 30px;
+    float: right;
+    background-color: #000000;
+    background-color:rgba(0, 0, 0, 0.4); /*opacity*/
 }
 .main {
 	padding-left: 30px;
