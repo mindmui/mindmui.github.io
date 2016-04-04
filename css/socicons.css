@@ -3,12 +3,13 @@
 /* social */
 @font-face {
   font-family: "social";
-  src:url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/socicon.eot");
-  src:url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/socicon.woff") format("woff"),
-    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/socicon.ttf") format("truetype"),
-    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/socicon.svg#1454277530") format("svg");
+  src:url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/1459624185.eot");
+  src:url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/1459624185.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/1459624185.woff") format("woff"),
+    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/1459624185.ttf") format("truetype"),
+    url("https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/fonts/1459624185.svg#1454277530") format("svg");
 
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 
 
   font-weight: normal;
