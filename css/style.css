@@ -168,6 +168,13 @@ a.menu:active {
     background-color: #000000;
     background-color:rgba(0, 0, 0, 0.4); /*opacity*/
 }
+.husky_wrap {
+	position: fixed;
+    left: -10px;
+    bottom: 0px;
+    float: left;
+}
+
 
 .main {
 	padding-left: 30px;
