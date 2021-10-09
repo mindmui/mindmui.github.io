@@ -160,17 +160,19 @@ a.menu:active {
 }
 .portfolio {
 	position: fixed;
-    padding-right: 30px;
+ 	margin-top: 240px; /*fixed*/
+    float: right ;
     padding-left: 40px;
-    right: 20px;
-    top: 30px;
-    float: right;
+    width: 105%;
     background-color: #000000;
-    background-color:rgba(0, 0, 0, 0.4); /*opacity*/
+    background-color:rgba(0, 0, 0, 0.7); /*opacity*/
 }
+
+
 .husky_wrap {
 	position: fixed;
-    left: -10px;
+
+    left: 20px;
     bottom: 0px;
     float: left;
 }
@@ -257,7 +259,7 @@ display: none;
 
 /* Tablet & Desktop Layout: 768px to a max of 1232px.  Inherits styles from: Mobile Layout. */
 
-@media (min-width: 770px) {
+@media (min-width: 600px) { /* Change to 600px */
 
 .text {
 	color: #FFFFFF;
@@ -344,3 +346,23 @@ svg:hover #twitter {
 }
 
 
+.portfolio { /*portfolio for desktop*/
+	/* position: fixed; */
+	position: relative;
+    padding-right: 30px;
+    padding-left: 40px;
+    margin-top: 00px; /*fixed*/
+    right: 20px;
+    top: 30px;
+    float: right;
+    background-color: #000000;
+    background-color:rgba(0, 0, 0, 0.4); /*opacity*/
+    width: 250px
+}
+
+.husky_wrap { /* husky for desktop */
+	position: fixed;
+    left: -10px;
+    bottom: 0px;
+    float: left;
+}
