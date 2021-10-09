@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'oswaldregular';
-    src: url('http://mindmui.github.io/css/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
-         url('http://mindmui.github.io/css/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    src: url('./fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/oswald-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -33,7 +33,7 @@ img, object, embed, video {
   width: 100%;
 }
 h1 {
-	font-family: 'Oswald', 'oswaldregular', Helvetica, sans-serif;
+	font-family: 'oswaldregular', 'Oswald', Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 4em;
 	letter-spacing: .15em;
