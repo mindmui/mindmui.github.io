@@ -113,7 +113,8 @@ position: static;
 #siteDescription {
 position: absolute;
 top: 50%;
-padding-left: 25px;
+padding-left: 55px;
+padding-top: 90px;
 color: #44434c;
 }
 
