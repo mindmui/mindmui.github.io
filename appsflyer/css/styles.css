@@ -368,14 +368,14 @@ select {
 }
 
 .navbar .logo-image img {
-    width: 133px;
+    width: 133;
 	height: 30px;
 }
 
 .navbar .logo-text {
 	color: #222222;
 	font-weight: 700;
-	font-size: 1.875rem;
+	font-size: 1.275rem;
 	line-height: 1rem;
 	text-decoration: none;
 }
