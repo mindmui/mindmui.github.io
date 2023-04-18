@@ -30,23 +30,9 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5VL2TJH');</script>
-    <!-- End Google Tag Manager -->
-
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarExample">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VL2TJH"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
     <!-- Navigation -->
     <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
         <div class="container">
@@ -157,7 +143,7 @@
         </div> <!-- end of container -->
     </div> <!-- end of counter -->
     <!-- end of details 2 -->
-
+                       
     <!-- Details 1 -->
     <div id="smartscript" class="basic-1">
         <div class="container">
@@ -172,8 +158,7 @@
                         <h2><span>Smart Script Solution</span><br> for your web-to-app campaigns</h2>
                         <p>OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.</p>
                         <p>See illustration below.</p>
-                        <a class="btn-solid-reg" href="https://salisa.onelink.me/F3t6?pid=website&c=website">Download App</a>
-                        
+                        <a id="smartscriptlink" class="btn-solid-reg">Download App</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -271,12 +256,35 @@
         <img src="images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-    	
+
     <!-- Scripts -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/af-smartscript.js"></script> <!-- AppsFlyer Smart Script scripts -->
+    <script>
+        //Initializing Smart Script arguments
+        var oneLinkURL = "https://salisa.onelink.me/F3t6";
+        var mediaSource = {keys:["pid","utm_source"],defaultValue:"website"};
+        var campaign = {keys:["c","utm_campaign"],defaultValue:"website"};
+        var custom_ss_ui = {paramKey:"af_ss_ui",defaultValue:"true"};
+
+        var result_url = window.AF_SMART_SCRIPT.generateOneLinkURL({
+            oneLinkURL: oneLinkURL,
+            afParameters: {
+            mediaSource: mediaSource,
+            campaign: campaign,
+            afCustom: [
+                custom_ss_ui
+            ]
+            }
+        });
+
+        if(result_url) {
+          document.getElementById('smartscriptlink').setAttribute("href", result_url.clickURL); 
+        }
+    </script>
 </body>
 </html>
