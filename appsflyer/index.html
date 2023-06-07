@@ -309,15 +309,15 @@
             // Fire impression
             // Timer for temporary bug fixes
           console.log("Waiting before calling fireImpressionsLink()...");
-            setTimeout(() => {
+          setTimeout(() => {
               window.AF_SMART_SCRIPT.fireImpressionsLink();
               console.log("Impression fired"); 
             }, 1000);   
 
           // Display QR Code
-            if(window.screen.availHeight > 800) {
-          window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code');
-      }
+          if(window.screen.availHeight > 800) {
+              window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code');
+         }
         }
 
     </script>
