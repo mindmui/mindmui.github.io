@@ -160,18 +160,24 @@
     <div id="smartscript" class="basic-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-7">
+                <div  class="col-lg-6 col-xl-7 outer">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/details-1.svg" alt="alternative">
+
+                              <!--  <img class=" img-fluid" src="images/details-1.svg" alt="alternative"> -->
+                                <div class="qr-code" id="smartscript_qr_code" ></div> 
+   
                     </div> <!-- end of image-container -->
+
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
+                    <div class=" text-container">
                         <h2><span>Smart Script </span>for your web-to-app campaigns</h2>
                         <p>OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.</p>
-                        <p>You can try enter the app using www.mind.in.th/appsflyer compared to www.mind.in.th/appsflyer?utm_source=test</p>
+                        <p>Try entering the website with different parameters. <a href="https://www.mind.in.th/appsflyer/">Without params</a> or <a href="https://www.mind.in.th/appsflyer/?utm_source=test">With params</a></p>
                         <p>See illustration below.</p>
                         <a id="smartscriptlink" class="btn-solid-reg">Download App</a>
+
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -279,9 +285,9 @@
     <script>
         //Initializing Smart Script arguments
         var oneLinkURL = "https://salisa.onelink.me/F3t6";
-        var mediaSource = {keys:["pid","utm_source"],defaultValue:"website"};
-        var campaign = {keys:["c","utm_campaign"],defaultValue:"smartbannerweb"};
-        var custom_ss_ui = {paramKey:"af_ss_ui",defaultValue:"true"};
+        var mediaSource = {keys:["pid","utm_source"], defaultValue:"website"};
+        var campaign = {keys:["c","utm_campaign"], defaultValue:"smartbannerweb"};
+        var custom_ss_ui = {paramKey:"af_ss_ui", defaultValue:"true"};
         var is_retargeting = {paramKey: "is_retargeting", keys: [], defaultValue: "true"};
 
         var result_url = window.AF_SMART_SCRIPT.generateOneLinkURL({
@@ -297,8 +303,23 @@
         });
 
         if(result_url) {
-          document.getElementById('smartscriptlink').setAttribute("href", result_url.clickURL); 
+            // Add link to the download button
+          document.getElementById('smartscriptlink').setAttribute("href", result_url.clickURL);
+
+            // Fire impression
+            // Timer for temporary bug fixes
+          console.log("Waiting before calling fireImpressionsLink()...");
+            setTimeout(() => {
+              window.AF_SMART_SCRIPT.fireImpressionsLink();
+              console.log("Impression fired"); 
+            }, 1000);   
+
+          // Display QR Code
+            if(window.screen.availHeight > 800) {
+          window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code');
+      }
         }
+
     </script>
 </body>
 </html>

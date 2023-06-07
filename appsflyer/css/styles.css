@@ -30,6 +30,37 @@ Colors:
 - Body text - dark gray #5e6576
 ******************************************/
 
+/**************************/
+/*      Smart Script      */
+/**************************/
+ 
+#smartscript_qr_code canvas { 
+	height: 250px;
+	width: 250px;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+.outer {
+	background-image: url('../images/details-1.svg');
+	background-repeat: no-repeat;
+	min-height: 310px;
+  	background-position: center;
+  	margin-bottom: 1rem;
+}
+
+
+.qr-code {
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 120px;
+	padding-left: 60px;
+	background-color: rgba(255, 255, 255, 0.5);
+	min-height: 470px;
+}
+}
+
 
 /**************************/
 /*     General Styles     */
