@@ -9,28 +9,28 @@
     <meta name="author" content="Salisa Niramansakul">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="AppsFlyer Demo Site - Website Name" /> <!-- website name -->
-	<meta property="og:site" content="www.mind.in.th/AppsFlyer" /> <!-- website link -->
-	<meta property="og:title" content="AppsFlyer Demo Site - Title Page"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="AppsFlyer Demo Site - Description" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="AppsFlyer Demo Site - Website Name" /> <!-- website name -->
+    <meta property="og:site" content="www.mind.in.th/AppsFlyer" /> <!-- website link -->
+    <meta property="og:title" content="AppsFlyer Demo Site - Title Page"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="AppsFlyer Demo Site - Description" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>AppsFlyer Demo Page - Home</title>
+    <title>AppsFlyer Demo Page - Article</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 
-    <!-- Google Tag -->
+     <!-- Google Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FP9XP8Z92"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -40,17 +40,18 @@
     </script>
 
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+<body>
 
     <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light extra-page" aria-label="Main navigation">
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/af-logo.png" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="../index.html"><img src="../images/af-logo.png" alt="alternative"></a>
+
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text" href="index.html">Demo Site</a> 
+            <a class="navbar-brand logo-text" href="../index.html">Demo Site</a> 
 
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,29 +60,27 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#app">Salisa App</a>
+                        <a class="nav-link" href="index.html#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#smartscript">Smart Script</a>
+                        <a class="nav-link" href="index.html#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./af_banner.html">Smart Banner</a>
+                        <a class="nav-link" href="index.html#pricing">Pricing</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./fruits/" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Fruits</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="./fruits/apples.html">Apples</a></li>
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">Papayas</a></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">Bananas</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">Oranges</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
                         </ul>
-                    </li> 
+                    </li>
                 </ul>
                 <span class="nav-item">
                     <a class="btn-solid-sm" href="https://www.appsflyer.com">Go to AppsFlyer</a>
@@ -91,117 +90,94 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 
-      
+
     <!-- Header -->
-    <header id="header" class="header">
+    <header class="ex-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <div class="section-title">Welcome to AppsFlyer Demo Site</div>
-                        <h1 class="h1-large">Salisa App</h1>
-                        <p class="p-large">Android application built on Java to demonstrate AppsFlyer features.</p>
-                        <a class="btn-outline-lg" href="#app">Read More</a>
-                      
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/header-illustration.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Apples</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </header> <!-- end of header -->
+    </header> <!-- end of ex-header -->
     <!-- end of header -->
 
 
-    <!-- Details 2 -->
-    <div id="app" class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2><span>Salisa App</span><br> built with tons of love</h2>
-                        <p>Version 2.0 with Unified Deeplinking (UDL) and branded links capabilities added.<br/><br/>
-                    
-
-                        <a class="btn-solid-reg" href="https://salisa.onelink.me/F3t6/website">Latest Version</a> 
-                        <a class="btn-outline-reg" href="https://github.com/mindmui/SalisaApp">Github Repo</a>
-                        </p>
-                    
-                        <!-- Counter -->
-                        <div class="counter-container">
-                            <div class="counter-cell">
-                                <div data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2" class="purecounter">1</div>
-                                <div class="counter-info">Features</div>
-                            </div> <!-- end of counter-cell -->
-                            <div class="counter-cell red">
-                                <div data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter">1</div>
-                                <div class="counter-info">Bug fixed</div>
-                            </div> <!-- end of counter-cell -->
-                        </div> <!-- end of counter-container -->
-                        <!-- end of counter -->
-
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-2.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of details 2 -->
-                       
-    <!-- Details 1 -->
-    <div id="smartscript" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div  class="col-lg-6 col-xl-7 outer">
-                    <div class="image-container">
-
-                              <!--  <img class=" img-fluid" src="images/details-1.svg" alt="alternative"> -->
-                                <div class="qr-code" id="smartscript_qr_code" ></div> 
-   
-                    </div> <!-- end of image-container -->
-
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-5">
-                    <div class=" text-container">
-                        <h2><span>Smart Script </span>for your web-to-app campaigns</h2>
-                        <p>OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.</p>
-                        <p>Try entering the website with different parameters. <a href="https://www.mind.in.th/appsflyer/">Without params</a> or <a href="https://www.mind.in.th/appsflyer/?utm_source=test">With params</a></p>
-                        <p>See illustration below.</p>
-                        <a id="smartscriptlink" class="btn-solid-reg">Download App</a>
-
-
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of details 1 -->
-
-    <!-- Invitation -->
-    <div class="basic-2">
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="text-container">
-                        <h4>You learn more from failure than from success. Don’t let it stop you. Failure builds character.</h4>
-                    </div> <!-- end of text-container -->
+                    <img class="img-fluid mt-5 mb-3" src="../images/article-details-large.jpg" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of invitation -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <p>Welcome to the Apples Page. This post is written to demonstrate the combined use cases of Smart Script and Unified Deep Linking (UDL). We will build on top of the standard smart script with a little help from additional javascript function.</p>
+
+                    <h2 class="mb-3">Basic Smart Script</h2>
+
+                    <p>The button below is embeded with OneLink without any deep link value. If an existing app user clicks on the link, he/she will land to the homescreen.</p>
+                    <p align="center">
+                        <a id="smartscriptlink" class="btn-outline-reg mb-5" >Without Deep Link Value</a>
+                    </p>
+
+                    <h2 class="mb-3">Advanced Smart Script</h2>
+
+                    <p>The button below is embeded with OneLink with a deep link value according to the website URL. If an existing app user clicks on the link, he/she will be sent to the specific page according to the current page.</p>
+
+                    <p>We will be using `window.location`- a javascript function to automatically pick up the current landing page URL.</p>
+
+
+                    <p align="center">
+                        <a id="smartscriptlink2" class="btn-solid-reg mb-5" >With Deep Link Value</a>
+                    </p>
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+   
+
+                </div> <!-- end of col -->   
+            </div> <!-- end of row -->   
+        </div> <!-- end of container -->   
+    </div> <!-- end of ex-cards-1 -->
+    <!-- end of cards -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mb-5">
+                        <h3>Make Smart Script even more dynamics</h3>
+                        <p>This technique allows website developer to dynamically generate the OneLink outgoing links equipped with deeplink capability to direct the existing users to the desired in-app landing pages according to their needs.</p>
+                    </div> <!-- end of text-box -->
+ 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
 
 
     <!-- Footer -->
     <div class="footer bg-gray">
-        <img class="decoration-city" src="images/decoration-city.svg" alt="alternative">
+        <img class="decoration-city" src="../images/decoration-city.svg" alt="alternative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -264,17 +240,18 @@
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
+        <img src="../images/up-arrow.png" alt="alternative">
     </button>
     <!-- end of back to top button -->
-
+    	
     <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="js/af-smartscript.js"></script> <!-- AppsFlyer Smart Script scripts -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="../js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../js/af-smartscript.js"></script> <!-- AppsFlyer Smart Script scripts -->  
+
     <script>
         //Initializing Smart Script arguments
         var oneLinkURL = "https://salisa.onelink.me/F3t6";
@@ -282,6 +259,16 @@
         var campaign = {keys:["c","utm_campaign"], defaultValue:"smartbannerweb"};
         var custom_ss_ui = {paramKey:"af_ss_ui", defaultValue:"true"};
         var is_retargeting = {paramKey: "is_retargeting", keys: [], defaultValue: "true"};
+
+        //Advanced Smart Script
+        var page_url = window.location.pathname
+        var path_url = page_url.split("/fruits/")
+        var dp_value = path_url[1].replace(".html","")
+        console.log("print me")
+        console.log(dp_value)
+
+        var deep_link_value = {paramKey: "deep_link_value", keys: [], defaultValue: dp_value};
+
 
         var result_url = window.AF_SMART_SCRIPT.generateOneLinkURL({
             oneLinkURL: oneLinkURL,
@@ -295,9 +282,23 @@
             }
         });
 
+        var result_url2 = window.AF_SMART_SCRIPT.generateOneLinkURL({
+            oneLinkURL: oneLinkURL,
+            afParameters: {
+            mediaSource: mediaSource,
+            campaign: campaign,
+           deepLinkValue: deep_link_value,
+            afCustom: [
+                custom_ss_ui,
+                is_retargeting
+            ]
+            }
+        });
+
         if(result_url) {
-            // Add link to the download button
+            // Add link to the download button - Case 1 without Deep Link Value
           document.getElementById('smartscriptlink').setAttribute("href", result_url.clickURL);
+          document.getElementById('smartscriptlink2').setAttribute("href", result_url2.clickURL);
 
             // Fire impression
             // Timer for temporary bug fixes
@@ -314,5 +315,6 @@
         }
 
     </script>
+
 </body>
 </html>
