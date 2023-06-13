@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>AppsFlyer Demo Page - Article</title>
+    <title>AppsFlyer Demo Page | Fruits - Apples</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 	<link href="../css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="../images/favicon.png">
 
      <!-- Google Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FP9XP8Z92"></script>
@@ -43,12 +43,11 @@
 <body>
 
     <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light extra-page" aria-label="Main navigation">
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
         <div class="container">
 
             <!-- Image Logo -->
             <a class="navbar-brand logo-image" href="../index.html"><img src="../images/af-logo.png" alt="alternative"></a>
-
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <a class="navbar-brand logo-text" href="../index.html">Demo Site</a> 
@@ -63,24 +62,26 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#services">Services</a>
+                        <a class="nav-link" href="../index.html#app">Salisa App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#projects">Projects</a>
+                        <a class="nav-link" href="../index.html#smartscript">Smart Script</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#pricing">Pricing</a>
+                        <a class="nav-link" href="../af_banner.html">Smart Banner</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                        <a class="nav-link dropdown-toggle" href="../fruits/" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Fruits</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><a class="dropdown-item" href="../fruits/apples.html">Apples</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><a class="dropdown-item" href="#">Papayas</a></li>
                             <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="#">Bananas</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="#">Oranges</a></li>
                         </ul>
-                    </li>
+                    </li> 
                 </ul>
                 <span class="nav-item">
                     <a class="btn-solid-sm" href="https://www.appsflyer.com">Go to AppsFlyer</a>
@@ -122,13 +123,30 @@
 
                     <p>The button below is embeded with OneLink with a deep link value according to the website URL. If an existing app user clicks on the link, the user will be sent to the specific page according to the current page.</p>
 
-                    <p>We will be using `window.location`- a javascript function to automatically pick up the current landing page URL.</p>
+                    <p>We can utilize<code>window.location</code>- a javascript method to automatically pick up the current landing page URL.</p>
 
 
-                    <p align="center">
+                    <p align="center"><br/>
                         <a id="smartscriptlink2" class="btn-solid-reg mb-5" >With Deep Link Value</a>
                     </p>
 
+                    <h3>Javascript Walkthrough</h3>
+                    <p>Let's started with
+                        <code>var page_url = window.location.pathname</code>
+                        this will return you the <code>page_url</code>to be 
+                        <code id="page_url"></code></p>
+
+                    <p>From here you can use<code> var path_url = page_url.split("/fruits/")</code> to split the path into 2, and extract the fruit name in the latter part using
+                        <code>path_url[1]</code>, which will return you
+                        <code id="path_url"></code></p>
+
+                    <p>Now, we can clean up the<code>.html</code>with<code>var dp_value = path_url[1].replace(".html","")</code>There, you will have<code id="dp_value"></code></p>
+
+                    <p>Lastly, because the<code>deep_link_value</code>parameter that the app accepts for the fruit name has to start with capital letter, we use the trick
+                        <code>
+                            dp_value.charAt(0).toUpperCase() + dp_value.slice(1)
+                        </code>This will return you the exact format needed for the application, <code id="dp_value2"></code>.        
+                    </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -255,7 +273,13 @@
 
         var deep_link_value = {paramKey: "deep_link_value", keys: [], defaultValue: dp_value2};
 
+        // For post explanation - Do not need this for your Smart Script
+        document.getElementById("page_url").innerHTML = page_url;
+        document.getElementById("path_url").innerHTML = path_url[1];
+        document.getElementById("dp_value").innerHTML = dp_value;
+        document.getElementById("dp_value2").innerHTML = dp_value2;
 
+        //
         var result_url = window.AF_SMART_SCRIPT.generateOneLinkURL({
             oneLinkURL: oneLinkURL,
             afParameters: {
