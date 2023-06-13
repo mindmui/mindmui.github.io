@@ -105,34 +105,22 @@
 
 
     <!-- Basic -->
-    <div class="ex-basic-1 pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of basic -->
-
-
-    <!-- Basic -->
     <div class="ex-basic-1 pt-4">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <p>Welcome to the Apples Page. This post is written to demonstrate the combined use cases of Smart Script and Unified Deep Linking (UDL). We will build on top of the standard smart script with a little help from additional javascript function.</p>
-
+                    <p align="center"><img class="img-fluid" style="max-width: 400px;" src="../images/apples.jpeg" alt="Apples"></p>
                     <h2 class="mb-3">Basic Smart Script</h2>
 
-                    <p>The button below is embeded with OneLink without any deep link value. If an existing app user clicks on the link, he/she will land to the homescreen.</p>
+                    <p>The button below is embeded with OneLink without any deep link value. If an existing app user clicks on the link, the user will be sent to the homescreen.</p>
                     <p align="center">
                         <a id="smartscriptlink" class="btn-outline-reg mb-5" >Without Deep Link Value</a>
                     </p>
 
                     <h2 class="mb-3">Advanced Smart Script</h2>
 
-                    <p>The button below is embeded with OneLink with a deep link value according to the website URL. If an existing app user clicks on the link, he/she will be sent to the specific page according to the current page.</p>
+                    <p>The button below is embeded with OneLink with a deep link value according to the website URL. If an existing app user clicks on the link, the user will be sent to the specific page according to the current page.</p>
 
                     <p>We will be using `window.location`- a javascript function to automatically pick up the current landing page URL.</p>
 
@@ -164,7 +152,7 @@
                 <div class="col-xl-10 offset-xl-1">
                     <div class="text-box mb-5">
                         <h3>Make Smart Script even more dynamics</h3>
-                        <p>This technique allows website developer to dynamically generate the OneLink outgoing links equipped with deeplink capability to direct the existing users to the desired in-app landing pages according to their needs.</p>
+                        <p>This technique allows a website developer to dynamically generate the OneLink outgoing links equipped with the deeplink capability to direct the existing users to the desired in-app landing pages according to their needs without hard-coding the deeplink value.</p>
                     </div> <!-- end of text-box -->
  
                 </div> <!-- end of col -->
@@ -263,10 +251,9 @@
         var page_url = window.location.pathname
         var path_url = page_url.split("/fruits/")
         var dp_value = path_url[1].replace(".html","")
-        console.log("print me")
-        console.log(dp_value)
+        var dp_value2 = dp_value.charAt(0).toUpperCase() + dp_value.slice(1)
 
-        var deep_link_value = {paramKey: "deep_link_value", keys: [], defaultValue: dp_value};
+        var deep_link_value = {paramKey: "deep_link_value", keys: [], defaultValue: dp_value2};
 
 
         var result_url = window.AF_SMART_SCRIPT.generateOneLinkURL({
@@ -308,7 +295,7 @@
             }, 1000);   
 
           // Display QR Code
-          if(window.screen.availwidth > 800) {
+          if(window.screen.availwidth > 768) {
               window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code');
          }
         }
