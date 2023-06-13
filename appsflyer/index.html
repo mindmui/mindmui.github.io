@@ -295,6 +295,7 @@
             }
         });
 
+
         if(result_url) {
             // Add link to the download button
           document.getElementById('smartscriptlink').setAttribute("href", result_url.clickURL);
@@ -308,11 +309,16 @@
             }, 1000);   
 
           // Display QR Code
-          if(window.screen.availwidth > 800) {
-              window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code');
-         }
-        }
+          const screenAvailWidth = window.screen.availWidth;
 
+          const qrOptions = {
+              logo: "https://files.readme.io/eb4395c-small-aflogo.png",
+              codeColor: "#5e6576"
+            }
+          if(screenAvailWidth > 800) {
+              window.AF_SMART_SCRIPT.displayQrCode('smartscript_qr_code', qrOptions);
+            }
+        }
     </script>
 </body>
 </html>
