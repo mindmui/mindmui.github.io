@@ -9,13 +9,13 @@
   -ms-flex-align: center;
   align-items: center;
   padding-left: 0;
-  margin-right: 0.75rem;
+  margin-right: 0.1rem;
 }
 
 .form-check-inline .form-check-input {
   position: static;
   margin-top: 0;
-  margin-right: 0.3125rem;
+  margin-right: -0.15rem;
   margin-left: 0;
 }
 
