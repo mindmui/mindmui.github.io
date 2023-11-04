@@ -9,14 +9,15 @@
   -ms-flex-align: center;
   align-items: center;
   padding-left: 0;
-  margin-right: 0.1rem;
+  margin-right: -0.15rem;
+  margin-left: -0.3rem;
 }
 
 .form-check-inline .form-check-input {
   position: static;
   margin-top: 0;
-  margin-right: -0.15rem;
-  margin-left: 0;
+  margin-right: -0.85rem;
+  margin-left: -0.15rem;
 }
 
 .is-hidden {

@@ -68,7 +68,7 @@
 							<h2>RSVP ตอบรับคำเชิญ</h2>
 						</header>
 						<div class="content">
-							<p>คำเชิญร่วมงานฉลองมงคลสมรสระหว่าง <strong> นางสาวรลิตา ไตรแสงรุจิระ (แม็ก)</strong> และ <strong>นายกัญจน์ นิรมานสกุล (กาย)</strong> โรงแรม Avani+ Riverside Bangkok ณ ห้อง Grand Riverside Ballroom</p>
+							<p>คำเชิญร่วมงานฉลองมงคลสมรสระหว่าง <strong> นางสาวรลิตา ไตรแสงรุจิระ (แม็ก)</strong> และ <strong>นายกัญจน์ นิรมานสกุล (กาย)</strong> โรงแรม Avani+ Riverside Bangkok ณ ห้อง Grand Riverside Ballroom <strong>เวลา 18.30 น.</strong>  </p>
 
               <h2 style="background:#eebbb8; text-align: center;" id="success-message" class="is-hidden">
               ได้รับคำตอบเรียบร้อย <br> ขอบคุณที่เสียสละเวลาในการตอบรับคำเชิญ ❤️
@@ -93,6 +93,8 @@
 									<div class="field select">
 										      <select name="invited-by" class="form-select wide" id="default-select" >
                            <option value="0" data-display="คุณได้รับคำเชิญจาก" hidden>คุณได้รับคำเชิญจาก</option>
+                            <option value="groom">เจ้าบ่าว (กัน)</option>
+                            <option value="bride">เจ้าสาว (แม็ก)</option>
                             <option value="groom-dad">พ่อเจ้าบ่าว</option>
                             <option value="groom-mom">แม่เจ้าบ่าว</option>
                             <option value="bride-dad">พ่อเจ้าสาว</option>
@@ -139,10 +141,20 @@
 												  <label class="form-check-label" for="three-accompany">
 												    3
 												  </label>
-
 										</div>
-
+										 
+										<div class="field select half">
+										      <select name="invited-by" class="form-select wide field" id="default-select" >
+                           <option value="0" data-display="เข้าร่วมงานจำนวน" hidden>เข้าร่วมงานจำนวน</option>
+                            <option value="1">1 ท่าน</option>
+                            <option value="2">2 ท่าน</option>
+                            <option value="3">3 ท่าน</option>
+                            <option value="4">4 ท่าน</option>
+                    			</select>
 									</div>
+
+
+									</div> <!--coming-->
 									<div class="field"></div> 
 
 								<ul class="actions">
