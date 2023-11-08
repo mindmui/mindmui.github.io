@@ -11,6 +11,9 @@
   padding-left: 0;
   margin-right: -0.15rem;
   margin-left: -0.3rem;
+  margin-top: -0.5rem;
+  margin-inline-end: 10px;
+  margin-bottom: 0;
 }
 
 .form-check-inline .form-check-input {
@@ -18,6 +21,7 @@
   margin-top: 0;
   margin-right: -0.85rem;
   margin-left: -0.15rem;
+  margin-bottom: -0.1rem;
 }
 
 .is-hidden {
@@ -2277,6 +2281,7 @@ input, select, textarea {
 			padding-left: 2.675rem;
 			padding-right: 0.875rem;
 			position: relative;
+			margin-bottom: 0.4rem;
 			text-transform: none;
 		}
 
