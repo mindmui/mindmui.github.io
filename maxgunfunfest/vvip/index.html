@@ -45,6 +45,49 @@
 						</div>
 					</section>
 
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Program Details</h2>
+						</header>
+						<div class="content">
+							<h2  style="color:#e04157; ">พิธีหมั้น <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-calendar-heart" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+</svg></h2>
+
+							<table>
+								<tr>
+									<td>  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e04157" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+</svg>			</td>
+									<td>พิธีขันหมาก</td>
+									<td>07.29 น.</td>
+									
+								</tr>
+								<tr>
+									<td>  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e04157" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+</svg>			</td>
+									<td>พิธีสวมแหวน</td>
+									<td>08.08 น.</td>
+									
+
+								</tr>
+								<tr>
+									<td>  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e04157" class="bi bi-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+</svg>			</td>
+									<td>พิธียกน้ำชา</td>
+									<td>08.49 น.</td>
+									
+
+								</tr>
+							</table>
+					
+							<h2  style="color:#e04157; 		display: inline; ">งานเลี้ยงฉลองมงคลสมรส</h2>
+							<h2  style="color:#000;	display: inline; ">เวลา 18.30 น.</h2>
+						</div>
+					</section>
 
 						<!-- RSVP Section -->
 					<section id="rsvp">
@@ -78,8 +121,10 @@
 									<div class="field select">
 										      <select name="invited-by" class="form-select wide" id="default-select" >
                            <option value="0" data-display="คุณได้รับคำเชิญจาก" hidden>คุณได้รับคำเชิญจาก</option>
-                            <option value="groom">เจ้าบ่าว (กัน)</option>
-                            <option value="bride">เจ้าสาว (แม็ก)</option>
+                            <option value="groom-dad">พ่อเจ้าบ่าว</option>
+                            <option value="groom-mom">แม่เจ้าบ่าว</option>
+                            <option value="bride-dad">พ่อเจ้าสาว</option>
+                            <option value="bride-mom">แม่เจ้าสาว</option>
                     			</select>
 									</div>
 									<div class="field">
@@ -97,35 +142,59 @@
 											</div>
 									</div>
 
+									<div id="coming" class="field">
 
-									<div id="coming" class="field"> 
-
-										<div class="field select half">
-										      <select name="guests-evening" class="form-select wide field" id="default-select" >
-                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนผู้เข้าร่วมงาน</option>
-                            <option value="1">1 ท่าน</option>
-                            <option value="2">2 ท่าน</option>
-                            <option value="3">3 ท่าน</option>
-                            <option value="4">4 ท่าน</option>
-                    			</select>
-              			</div>
-
-                  	<div class="field"> </br></div>
-                  	<div class=" form-check form-check-inline" > 
-
-															<input class="form-check-input" type="hidden" name="attending-party" value="no">
-															<input class="form-check-input" type="checkbox" name="attending-party" value="yes"  id="party" >
-														  <label class="form-check-label" for="party">
-														    เข้าร่วม After Party
-														  </label>
-
-									</div>
-
-													
-
-								</div>
+										<div class="field">
+											<div class="field"> ท่านสามารถมาร่วมงาน
+											</div>
 											<div class="field"></br>
 											</div>
+												
+													<div class="form-check form-check-inline" > 
+
+															<input class="form-check-input" type="hidden" name="attending-morning" value="no">
+															<input class="form-check-input" type="checkbox" name="attending-morning" value="yes"  id="morning" >
+														  <label class="form-check-label" for="morning">
+														    เช้า
+														  </label>
+
+														<div class="field select half">
+														      <select name="guests-morning" class="form-select wide field" id="default-select" >
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนผู้เข้าร่วมงาน</option>
+				                            <option value="1">1 ท่าน</option>
+				                            <option value="2">2 ท่าน</option>
+				                            <option value="3">3 ท่าน</option>
+				                            <option value="4">4 ท่าน</option>
+				                    			</select>
+													</div>
+												</div>
+											</div>
+													<div class="field"></br>
+											</div>
+										
+
+											<div class="field">
+												<div class="form-check form-check-inline">
+															<input class="form-check-input" type="checkbox" name="attending-evening" value="no" >
+															<input class="form-check-input" type="checkbox" name="attending-evening" value="yes" id="evening" >
+														  <label class="form-check-label" for="evening">
+														    เย็น
+														  </label>
+														  	<div class="field select half">
+														      <select name="guests-evening" class="form-select wide field" id="default-select" >
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนผู้เข้าร่วมงาน</option>
+				                            <option value="1">1 ท่าน</option>
+				                            <option value="2">2 ท่าน</option>
+				                            <option value="3">3 ท่าน</option>
+				                            <option value="4">4 ท่าน</option>
+				                    			</select>
+													</div>
+												</div>
+											</div>
+													<div class="field"></br>
+											</div>
+
+								</div>
 
 								<ul class="actions">
 									<li><button  class="button primary" type="submit" >Submit</button></li>
