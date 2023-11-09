@@ -3,6 +3,35 @@
 @import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,600,700,300i,600i,700i");
 
 
+
+/* for google-map */
+.google-map {
+     padding-bottom: 70%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+@media (min-width: 400.98px) {
+
+	.mobile-break { display: none; }
+
+}
+
+@media (max-width: 400.98px) {
+	.form-check-label-special {
+ 	display: inline-block; 
+  vertical-align: middle;
+  line-height: 1rem;
+	}
+}
+
 .form-check-inline {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -14,6 +43,7 @@
   margin-top: -0.5rem;
   margin-inline-end: 10px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .form-check-inline .form-check-input {
@@ -25,7 +55,8 @@
 }
 
 .is-hidden {
-  display: none !important;
+  
+	display: none !important;
 }
 
 .loading {
@@ -225,6 +256,7 @@ input, select, textarea {
 		letter-spacing: 0.0375em;
 		line-height: 2;
 	}
+
 
 	a {
 		-moz-transition: border-bottom-color 0.25s ease-in-out;
@@ -2235,7 +2267,9 @@ input, select, textarea {
 		height: 3rem;
 		padding-right: 3rem;
 		text-overflow: ellipsis;
+
 	}
+
 
 		select option {
 			background-color: #ffffff;
@@ -2266,6 +2300,7 @@ input, select, textarea {
 		opacity: 0;
 		width: 1rem;
 		z-index: -1;
+
 	}
 
 		input[type="checkbox"] + label,

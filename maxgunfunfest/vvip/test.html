@@ -159,14 +159,14 @@
 													<div class="form-check form-check-inline" > 
 
 															<input class="form-check-input" type="hidden" name="attending-morning" value="no">
-															<input class="form-check-input" type="checkbox" name="attending-morning" value="yes" id="morning" onclick="milliValidation()" >
+															<input class="form-check-input" type="checkbox" name="attending-morning" value="yes"  id="morning" >
 														  <label class="form-check-label" for="morning">
 														    เช้า 
 														  </label>
 
 														<div class="field select">
 														      <select name="guests-morning" class="form-select wide field" id="guests-morning" >
-				                           <option disabled selected value data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนคน (รวมตัวท่าน)</option>
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนคน (รวมตัวท่าน)</option>
 				                            <option value="1">1 ท่าน</option>
 				                            <option value="2">2 ท่าน</option>
 				                            <option value="3">3 ท่าน</option>
@@ -182,13 +182,13 @@
 											<div class="field">
 												<div class="form-check form-check-inline">
 															<input class="form-check-input" type="checkbox" name="attending-evening" value="no" >
-															<input class="form-check-input" type="checkbox" name="attending-evening" value="yes" id="evening" onclick="milliValidation()" >
+															<input class="form-check-input" type="checkbox" name="attending-evening" value="yes" id="evening" >
 														  <label class="form-check-label" for="evening">
 														    เย็น
 														  </label>
 														  	<div class="field select half">
-														      <select name="guests-evening" class="form-select wide field" id="guests-evening">
-				                           <option disabled selected value data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนคน (รวมตัวท่าน)</option>
+														      <select name="guests-evening" class="form-select wide field" id="guests-evening" >
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนคน (รวมตัวท่าน)</option>
 				                            <option value="1">1 ท่าน</option>
 				                            <option value="2">2 ท่าน</option>
 				                            <option value="3">3 ท่าน</option>
@@ -203,32 +203,60 @@
 
 											<div class="field">
 												<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" name="attending-party" value="no" >
-															<input class="form-check-input" type="checkbox" name="attending-party" value="yes" id="party" onclick="milliValidation()" >
-														  <label class="form-check-label-special" for="party" >
-														    After <br class="mobile-break"/>
-														    Party
-														    
-														  </label>
-														  	<div class="field select half">
-														      <select name="guests-evening" class="form-select wide field" id="guests-party">
-				                           <option disabled selected value data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวนคน (รวมตัวท่าน)</option>
+													<table>
+														<tr>
+															<td>
+																	<input class="form-check-input" type="checkbox" name="attending-evening" value="no" >
+																	<input class="form-check-input" type="checkbox" name="attending-evening" value="yes" id="evening2" >
+															  	<label class="form-check-label" for="evening2">
+															    เย็น
+															  </label>
+															</td>
+																
+															<td>
+																	<div class="field select half">
+														      <select name="guests-evening2" class="form-select wide field" id="guests-evening2" >
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวน (รวมตัวท่าน)</option>
 				                            <option value="1">1 ท่าน</option>
 				                            <option value="2">2 ท่าน</option>
 				                            <option value="3">3 ท่าน</option>
 				                            <option value="4">4 ท่าน</option>
 				                    			</select>
 													</div>
-												</div>
-											</div>
-													
+															</td>
+														</tr>
+														<tr>
+															<td>
+																	<input class="form-check-input" type="checkbox" name="attending-evening" value="no" >
+																	<input class="form-check-input" type="checkbox" name="attending-evening" value="yes" id="evening2" >
+															  	<label class="form-check-label" for="evening2">
+															    After </br>
+															    Party
+															  </label>
+															</td>
+																
+															<td>
+																	<div class="field select half">
+														      <select name="guests-evening2" class="form-select wide field" id="guests-evening2" >
+				                           <option value="0" data-display="จำนวนผู้เข้าร่วมงาน" hidden>จำนวน (รวมตัวท่าน)</option>
+				                            <option value="1">1 ท่าน</option>
+				                            <option value="2">2 ท่าน</option>
+				                            <option value="3">3 ท่าน</option>
+				                            <option value="4">4 ท่าน</option>
+				                    			</select>
+													</div>
+															</td>
+														</tr>
+													</table>
+
+
+
+
 
 								</div>
-								<div class="field"></br>
-													</div>
 
 								<ul class="actions">
-									<li><button  class="button primary" type="submit" id="button-submit">Submit</button></li>
+									<li><button  class="button primary" type="submit" >Submit</button></li>
 								</ul>
 							</form>
 
@@ -299,59 +327,10 @@
 	
 			        document.getElementById("coming").style.display = "none";
 			    }
-
 				}
     	</script>
-
-    	<script type="text/javascript">
-    		function milliValidation() {
-
-			    if (document.getElementById("morning").checked == true ) { 
-			    		console.log("morning-checked")
-			        document.getElementById("guests-morning").required = true;
-
-			    } else {
-							console.log("morning-unchecked")
-							document.getElementById("guests-morning").removeAttribute("required");
-			    }
-
-			    if (document.getElementById("evening").checked == true ) { 
-
-			        document.getElementById("guests-evening").required = true;
-
-			    } else {
-	
-							document.getElementById("guests-evening").removeAttribute("required");
-			    }
-
-			    if (document.getElementById("party").checked == true ) { 
-
-			        document.getElementById("guests-party").required = true;
-
-			    } else {
-	
-							document.getElementById("guests-party").removeAttribute("required");
-			    }
-
-			 
-				}
-    	</script>
-
-    	<script type="text/javascript">
-
-    	function	attendcheck() {
-      	 if (document.getElementById("attend").checked == true) && (document.getElementById("guests-morning").checked==false) && (document.getElementById("guests-evening").checked==false) && (document.getElementById("guests-party").checked==false) {
-			    	alert("กรุณาเลือกอย่างน้อยหนึ่งพิธี");
-
-			    }
-			  }
-    	</script>
-
-
-
 
     	<script>
-
               const scriptURL = 'https://script.google.com/macros/s/AKfycbwNzUZmKOWWIIOq8GUnnYte0S9JS3-17b-CiUuk8YNMAChF_IboeiWReHw7IdS8XpmJKA/exec'
               const form = document.forms['submit-to-google-sheet']
 
