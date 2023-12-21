@@ -121,7 +121,25 @@
                         <br/><br/>
                     With similar setup to Smart Script, Smart Banner can also archieve similar result in forwarding the incoming URL parameters to the outgoing OneLink URL.</p>
                     <h3>Core Features</h3>
+                   <ul>
+                        <li>Parameters Forwarding</li>
+                        <li>Pre-defined creatives</li>
+                        <li>No coding required</li>
+                
+                    </ul> <p class="mb-5"></p>
                     <h3>Configuration</h3>
+                         <p class="mb-5">Configuration can be done directly through the AppsFlyer UI after the implementation has been done.</p>
+
+                    <h3>Implementation</h3>
+                         <p class="mb-5">Implementation can be done either directly through adding code on the webpage or through Google Tag Manager (GTM). The Smart Script on this webpage was implemented by adding the script directly.</p>
+
+                       <div class="text-box mb-5">
+                            <code>
+    !function(t,e,n,s,a,c,i,o,p){t.AppsFlyerSdkObject=a,t.AF=t.AF||function(){(t.AF.q=t.AF.q||[]).push([Date.now()].concat(Array.prototype.slice.call(arguments)))},t.AF.id=t.AF.id||i,t.AF.plugins={},o=e.createElement(n),p=e.getElementsByTagName(n)[0],o.async=1,o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join(",")+"&":"")+(i.length>0?"af_id="+i:""),p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","banners",{banners: {key: "ec76adbe-20b5-4fb4-a1ef-83603dd7ddfb"}})
+    AF('banners', 'showBanner')
+                        </code>
+                    </div>
+
                     
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
